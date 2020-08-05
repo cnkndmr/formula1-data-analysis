@@ -26,3 +26,5 @@ do
         sed "s/^/\"$year\",/g" "$i".csv >> data.csv
     fi
 done
+
+sed -i '1i\"race_year\",\"race_circuit\",\"lap\",\"driver\",\"position\",\"lap_time\"' data.csv
