@@ -2,7 +2,11 @@
 # Author: M. Can Kandemir
 # Email: cnkndmr@gmail.com
 
-for i in ../data/*
+rm ../data/*/year_*.csv
+rm ../data/*/year_*/race_*.csv
+rm ../data/*/data.csv
+
+for i in ../data/*/*
 do
     for j in "$i"/*
     do
@@ -23,8 +27,8 @@ do
     if [ -d "$i" ]
     then
         year=$(echo "$i" | grep -o "year_.*")
-        sed "s/^/\"$year\",/g" "$i".csv >> ../data/data.csv
+        sed "s/^/\"$year\",/g" "$i".csv >> ../data/f1/data.csv
     fi
 done
 
-sed -i '1i\"race_year\",\"race_circuit\",\"lap\",\"driver\",\"position\",\"lap_time\"' ../data/data.csv
+sed -i '1i\"race_year\",\"race_circuit\",\"lap\",\"driver\",\"position\",\"lap_time\"' ../data/f1/data.csv
