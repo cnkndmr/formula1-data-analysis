@@ -1,3 +1,9 @@
+# Formula 1 Data Analysis
+
+## Table of Contents:
+
+1. [Position by lap chart](src/01-position_by_lap.ipynb)
+
 TODOS:
 - [x] ~~Instead of seperated lap files merge all lap info into single file.~~
 - [ ] Add pretty tables
