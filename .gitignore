@@ -1,5 +1,4 @@
 /data/*
 /data_backup/*
-/data.csv
-.ipynb_checkpoints/*
 /examples/*
+*.ipynb_checkpoints*
