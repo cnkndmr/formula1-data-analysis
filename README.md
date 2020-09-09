@@ -1,8 +1,31 @@
 # Formula 1 Data Analysis
 
-## Table of Contents:
+## Plots
 
-1. [Position by lap chart](src/01-position_by_lap.ipynb)
-2. [Laptime comparison chart](src/02-laptime_comparison.ipynb)
+### Position by lap
 
-Dataset: http://ergast.com/downloads/f1db_csv.zip
+![](plots/example/position_by_lap_driver.png)
+
+![](plots/example/position_by_lap_constructor.png)
+
+### Laptime comparison
+
+![](plots/example/laptime_comparison_line.png)
+
+![](plots/example/laptime_comparison_box.png)
+
+### Delta time difference
+
+![](plots/example/delta_difference_line.png)
+
+![](plots/example/delta_difference_box.png)
+
+### Driver track laptime by years
+
+![](plots/example/driver_track_laptime_by_years_line.png)
+
+![](plots/example/driver_track_laptime_by_years_box.png)
+
+## Dataset
+
+http://ergast.com/downloads/f1db_csv.zip
